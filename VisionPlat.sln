@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "visionPlat", "VisionPlat.vcxproj", "{56B9A2F7-8DC9-A3CB-1BB2-486F9B89E68A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "visionPlat", "VisionPlat.vcxproj", "{7E73B8A3-450D-CA61-2576-CBAA8B789B9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56B9A2F7-8DC9-A3CB-1BB2-486F9B89E68A}.Debug|Win32.ActiveCfg = Debug|Win32
-		{56B9A2F7-8DC9-A3CB-1BB2-486F9B89E68A}.Debug|Win32.Build.0 = Debug|Win32
-		{56B9A2F7-8DC9-A3CB-1BB2-486F9B89E68A}.Release|Win32.ActiveCfg = Release|Win32
-		{56B9A2F7-8DC9-A3CB-1BB2-486F9B89E68A}.Release|Win32.Build.0 = Release|Win32
+		{7E73B8A3-450D-CA61-2576-CBAA8B789B9C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E73B8A3-450D-CA61-2576-CBAA8B789B9C}.Debug|Win32.Build.0 = Debug|Win32
+		{7E73B8A3-450D-CA61-2576-CBAA8B789B9C}.Release|Win32.ActiveCfg = Release|Win32
+		{7E73B8A3-450D-CA61-2576-CBAA8B789B9C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

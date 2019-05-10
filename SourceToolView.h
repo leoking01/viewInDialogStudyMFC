@@ -13,6 +13,7 @@
 
 
 class CSourceToolView : public CScrollView
+//class CSourceToolView : public CFormView
 {
 protected:
 
