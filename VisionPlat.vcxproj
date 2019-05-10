@@ -14,6 +14,7 @@
     <SccProjectName />
     <SccLocalPath />
     <Keyword>MFCProj</Keyword>
+    <ProjectName>visionPlat</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -61,7 +62,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
       <BrowseInformation>true</BrowseInformation>
-      <PrecompiledHeaderOutputFile>.\Debug\View_in_Dialog.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>.\Debug\VisionPlat.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <ObjectFileName>.\Debug\</ObjectFileName>
@@ -71,7 +72,7 @@
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <TypeLibraryName>.\Debug\View_in_Dialog.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Debug\VisionPlat.tlb</TypeLibraryName>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
     </Midl>
@@ -81,13 +82,13 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Debug\View_in_Dialog.bsc</OutputFile>
+      <OutputFile>.\Debug\VisionPlat.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>.\Debug\View_in_Dialog.exe</OutputFile>
+      <OutputFile>.\Debug\VisionPlat.exe</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -101,7 +102,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
-      <PrecompiledHeaderOutputFile>.\Release\View_in_Dialog.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderOutputFile>.\Release\VisionPlat.pch</PrecompiledHeaderOutputFile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <ObjectFileName>.\Release\</ObjectFileName>
@@ -110,7 +111,7 @@
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <TypeLibraryName>.\Release\View_in_Dialog.tlb</TypeLibraryName>
+      <TypeLibraryName>.\Release\VisionPlat.tlb</TypeLibraryName>
       <MkTypLibCompatible>true</MkTypLibCompatible>
       <TargetEnvironment>Win32</TargetEnvironment>
     </Midl>
@@ -120,12 +121,12 @@
     </ResourceCompile>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <OutputFile>.\Release\View_in_Dialog.bsc</OutputFile>
+      <OutputFile>.\Release\VisionPlat.bsc</OutputFile>
     </Bscmake>
     <Link>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <SubSystem>Windows</SubSystem>
-      <OutputFile>.\Release\View_in_Dialog.exe</OutputFile>
+      <OutputFile>.\Release\VisionPlat.exe</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -145,7 +146,7 @@
     <ClCompile Include="VisionPlatView.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="View_in_Dialog.rc" />
+    <ResourceCompile Include="VisionPlat.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChildFrm.h" />
@@ -161,11 +162,11 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="res\Toolbar.bmp" />
-    <CustomBuild Include="res\View_in_Dialog.ico" />
-    <CustomBuild Include="res\View_in_Dialog.rc2">
+    <CustomBuild Include="res\VisionPlat.ico" />
+    <CustomBuild Include="res\VisionPlat.rc2">
       <FileType>RC</FileType>
     </CustomBuild>
-    <CustomBuild Include="res\View_in_DialogDoc.ico" />
+    <CustomBuild Include="res\VisionPlatDoc.ico" />
     <CustomBuild Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
@@ -173,7 +174,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="View_in_Dialog.rc" />
+      <UserProperties RESOURCE_FILE="VisionPlat.rc" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

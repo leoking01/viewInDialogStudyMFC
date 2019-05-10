@@ -65,8 +65,8 @@ END
 
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
-IDR_MAINFRAME           ICON                    "res\\View_in_Dialog.ico"
-IDR_VIEW_ITYPE          ICON                    "res\\View_in_DialogDoc.ico"
+IDR_MAINFRAME           ICON                    "res\\VisionPlat.ico"
+IDR_VIEW_ITYPE          ICON                    "res\\VisionPlat.ico"
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -437,7 +437,7 @@ END
 LANGUAGE 7, 1
 #pragma code_page(1252)
 #endif //_WIN32
-#include "res\View_in_Dialog.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
+#include "res\VisionPlat.rc2"  // Nicht mit Microsoft Visual C++ bearbeitete Ressourcen
 #include "l.deu\afxres.rc"          // Standardkomponenten
 #include "l.deu\afxprint.rc"        // Ressourcen f¨¹r Drucken/Seitenansicht
 #endif
