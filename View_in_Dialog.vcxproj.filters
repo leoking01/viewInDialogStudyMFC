@@ -18,28 +18,28 @@
     <ClCompile Include="ChildFrm.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="DialogWindow.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
-    <ClCompile Include="ExtraView.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
     <ClCompile Include="MainFrm.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
     <ClCompile Include="StdAfx.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="View_in_Dialog.cpp">
+    <ClCompile Include="VisionPlat.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="View_in_DialogDoc.cpp">
+    <ClCompile Include="VisionPlatDoc.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="View_in_DialogView.cpp">
+    <ClCompile Include="VisionPlatView.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="MyDialogBar.cpp">
+    <ClCompile Include="SourceToolFrameWnd.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceToolView.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceToolDialogBar.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -52,12 +52,6 @@
     <ClInclude Include="ChildFrm.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="DialogWindow.h">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
-    <ClInclude Include="ExtraView.h">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
     <ClInclude Include="MainFrm.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
@@ -67,16 +61,22 @@
     <ClInclude Include="StdAfx.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="View_in_Dialog.h">
+    <ClInclude Include="VisionPlat.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="View_in_DialogDoc.h">
+    <ClInclude Include="VisionPlatDoc.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="View_in_DialogView.h">
+    <ClInclude Include="VisionPlatView.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
-    <ClInclude Include="MyDialogBar.h">
+    <ClInclude Include="SourceToolFrameWnd.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceToolView.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceToolDialogBar.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
   </ItemGroup>

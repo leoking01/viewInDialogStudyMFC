@@ -1,4 +1,4 @@
-// View_in_DialogView.h : Schnittstelle der Klasse CView_in_DialogView
+// View_in_DialogView.h : Schnittstelle der Klasse CVisionPlatView
 //
 /////////////////////////////////////////////////////////////////////////////
 
@@ -10,22 +10,22 @@
 #endif // _MSC_VER > 1000
 
 
-class CView_in_DialogView : public CScrollView
+class CVisionPlatView : public CScrollView
 {
 protected: // Nur aus Serialisierung erzeugen
-	CView_in_DialogView();
-	DECLARE_DYNCREATE(CView_in_DialogView)
+	CVisionPlatView();
+	DECLARE_DYNCREATE(CVisionPlatView)
 
 // Attribute
 public:
-	CView_in_DialogDoc* GetDocument();
+	CVisionPlatDoc* GetDocument();
 
 // Operationen
 public:
 
 // Überladungen
 	// Vom Klassenassistenten generierte Überladungen virtueller Funktionen
-	//{{AFX_VIRTUAL(CView_in_DialogView)
+	//{{AFX_VIRTUAL(CVisionPlatView)
 	public:
 	virtual void OnDraw(CDC* pDC);  // überladen zum Zeichnen dieser Ansicht
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
@@ -38,7 +38,7 @@ public:
 
 // Implementierung
 public:
-	virtual ~CView_in_DialogView();
+	virtual ~CVisionPlatView();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
@@ -48,7 +48,7 @@ protected:
 
 // Generierte Message-Map-Funktionen
 protected:
-	//{{AFX_MSG(CView_in_DialogView)
+	//{{AFX_MSG(CVisionPlatView)
 		// HINWEIS - An dieser Stelle werden Member-Funktionen vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!
 	//}}AFX_MSG
@@ -56,8 +56,8 @@ protected:
 };
 
 #ifndef _DEBUG  // Testversion in View_in_DialogView.cpp
-inline CView_in_DialogDoc* CView_in_DialogView::GetDocument()
-   { return (CView_in_DialogDoc*)m_pDocument; }
+inline CVisionPlatDoc* CVisionPlatView::GetDocument()
+   { return (CVisionPlatDoc*)m_pDocument; }
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

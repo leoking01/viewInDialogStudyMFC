@@ -2,8 +2,8 @@
 //
 
 #include "stdafx.h"
-#include "DialogWindow.h"
-#include "ExtraView.h"
+#include "SourceToolFrameWnd.h"
+#include "SourceToolView.h"
 #include <afxpriv.h> //Definition of WM_INITIALUPDATE
 
 #ifdef _DEBUG
@@ -12,39 +12,39 @@
 static char THIS_FILE[] = __FILE__;
 #endif
 
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
 /////////////////////////////////////////////////////////////////////////////
-// CDialogWindow
+// CSourceToolFrameWnd
 
-IMPLEMENT_DYNCREATE(CDialogWindow, CFrameWnd)
+IMPLEMENT_DYNCREATE(CSourceToolFrameWnd, CFrameWnd)
 
-BOOL CDialogWindow::m_bCreatedFlag = FALSE;
+BOOL CSourceToolFrameWnd::m_bCreatedFlag = FALSE;
 
-CDialogWindow::CDialogWindow()
+CSourceToolFrameWnd::CSourceToolFrameWnd()
 {
 }
 
-CDialogWindow::~CDialogWindow()
+CSourceToolFrameWnd::~CSourceToolFrameWnd()
 {
 }
 
-BEGIN_MESSAGE_MAP(CDialogWindow, CFrameWnd)
-	//{{AFX_MSG_MAP(CDialogWindow)
+BEGIN_MESSAGE_MAP(CSourceToolFrameWnd, CFrameWnd)
+	//{{AFX_MSG_MAP(CSourceToolFrameWnd)
 	ON_BN_CLICKED(IDC_GET, OnGet)
 	ON_BN_CLICKED(IDC_EXIT, OnExit)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// Behandlungsroutinen für Nachrichten CDialogWindow 
+// Behandlungsroutinen für Nachrichten CSourceToolFrameWnd 
 
 
-BOOL CDialogWindow::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext) 
+BOOL CSourceToolFrameWnd::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext) 
 {
 	// TODO: Speziellen Code hier einfügen und/oder Basisklasse aufrufen
-	//hang in the view CExtraView, this code ist copied (but modified) from http://www.codeguru.com/doc_view/ReplacingView.shtml
-	m_pViewClass = RUNTIME_CLASS(CExtraView);
+	//hang in the view CSourceToolView, this code ist copied (but modified) from http://www.codeguru.com/doc_view/ReplacingView.shtml
+	m_pViewClass = RUNTIME_CLASS(CSourceToolView);
 	m_pView = (CView*)m_pViewClass->CreateObject();
 	if (m_pView == NULL)
 	{
@@ -86,7 +86,7 @@ BOOL CDialogWindow::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext
 }
 
 
-BOOL CDialogWindow::DoModeless() //one could also add a function DoModal analogous to Dialogs 
+BOOL CSourceToolFrameWnd::DoModeless() //one could also add a function DoModal analogous to Dialogs 
 {
 	//create only one object, perhaps you don't want this, so remove this flag from the class
 	if (m_bCreatedFlag)
@@ -117,7 +117,7 @@ BOOL CDialogWindow::DoModeless() //one could also add a function DoModal analogo
 
 
 
-BOOL CDialogWindow::DestroyWindow() 
+BOOL CSourceToolFrameWnd::DestroyWindow() 
 {
 	// TODO: Speziellen Code hier einfügen und/oder Basisklasse aufrufen
 	//Add any safety controls HERE as this function is called by the close-button
@@ -127,16 +127,16 @@ BOOL CDialogWindow::DestroyWindow()
 }
 
 
-void CDialogWindow::OnGet() 
+void CSourceToolFrameWnd::OnGet() 
 {
 	// TODO: Code für die Behandlungsroutine der Steuerelement-Benachrichtigung hier einfügen
 	CString tempstr; //these lines are bullshit!! Do properly what you want to do, this is 
 	m_wndDialogBar.GetDlgItemText(IDC_INPUT,(tempstr));//just to show how it works
-	static_cast<CExtraView*>(m_pView)->m_strOutputtxt = tempstr += " ";
+	static_cast<CSourceToolView*>(m_pView)->m_strOutputtxt = tempstr += " ";
 	m_pView->Invalidate();
 }
 
-void CDialogWindow::OnExit() 
+void CSourceToolFrameWnd::OnExit() 
 {
 	// TODO: Code für die Behandlungsroutine der Steuerelement-Benachrichtigung hier einfügen
 	DestroyWindow(); //Do not put any safety check here, but in the overridden DestroyWindow()!!

@@ -130,34 +130,34 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ChildFrm.cpp" />
-    <ClCompile Include="DialogWindow.cpp" />
-    <ClCompile Include="ExtraView.cpp" />
+    <ClCompile Include="SourceToolFrameWnd.cpp" />
+    <ClCompile Include="SourceToolView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="MyDialogBar.cpp" />
+    <ClCompile Include="SourceToolDialogBar.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="View_in_Dialog.cpp" />
-    <ClCompile Include="View_in_DialogDoc.cpp" />
-    <ClCompile Include="View_in_DialogView.cpp" />
+    <ClCompile Include="VisionPlat.cpp" />
+    <ClCompile Include="VisionPlatDoc.cpp" />
+    <ClCompile Include="VisionPlatView.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="View_in_Dialog.rc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChildFrm.h" />
-    <ClInclude Include="DialogWindow.h" />
-    <ClInclude Include="ExtraView.h" />
+    <ClInclude Include="SourceToolFrameWnd.h" />
+    <ClInclude Include="SourceToolView.h" />
     <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="MyDialogBar.h" />
+    <ClInclude Include="SourceToolDialogBar.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="View_in_Dialog.h" />
-    <ClInclude Include="View_in_DialogDoc.h" />
-    <ClInclude Include="View_in_DialogView.h" />
+    <ClInclude Include="VisionPlat.h" />
+    <ClInclude Include="VisionPlatDoc.h" />
+    <ClInclude Include="VisionPlatView.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="res\Toolbar.bmp" />

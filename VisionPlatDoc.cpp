@@ -1,10 +1,10 @@
-// View_in_DialogDoc.cpp : Implementierung der Klasse CView_in_DialogDoc
+// View_in_DialogDoc.cpp : Implementierung der Klasse CVisionPlatDoc
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
-#include "View_in_DialogDoc.h"
+#include "VisionPlatDoc.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -13,31 +13,31 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogDoc
+// CVisionPlatDoc
 
-IMPLEMENT_DYNCREATE(CView_in_DialogDoc, CDocument)
+IMPLEMENT_DYNCREATE(CVisionPlatDoc, CDocument)
 
-BEGIN_MESSAGE_MAP(CView_in_DialogDoc, CDocument)
-	//{{AFX_MSG_MAP(CView_in_DialogDoc)
+BEGIN_MESSAGE_MAP(CVisionPlatDoc, CDocument)
+	//{{AFX_MSG_MAP(CVisionPlatDoc)
 		// HINWEIS - Hier werden Mapping-Makros vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogDoc Konstruktion/Destruktion
+// CVisionPlatDoc Konstruktion/Destruktion
 
-CView_in_DialogDoc::CView_in_DialogDoc()
+CVisionPlatDoc::CVisionPlatDoc()
 {
 	// ZU ERLEDIGEN: Hier Code für One-Time-Konstruktion einfügen
 
 }
 
-CView_in_DialogDoc::~CView_in_DialogDoc()
+CVisionPlatDoc::~CVisionPlatDoc()
 {
 }
 
-BOOL CView_in_DialogDoc::OnNewDocument()
+BOOL CVisionPlatDoc::OnNewDocument()
 {
 	if (!CDocument::OnNewDocument())
 		return FALSE;
@@ -51,9 +51,9 @@ BOOL CView_in_DialogDoc::OnNewDocument()
 
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogDoc Serialisierung
+// CVisionPlatDoc Serialisierung
 
-void CView_in_DialogDoc::Serialize(CArchive& ar)
+void CVisionPlatDoc::Serialize(CArchive& ar)
 {
 	if (ar.IsStoring())
 	{
@@ -66,19 +66,19 @@ void CView_in_DialogDoc::Serialize(CArchive& ar)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogDoc Diagnose
+// CVisionPlatDoc Diagnose
 
 #ifdef _DEBUG
-void CView_in_DialogDoc::AssertValid() const
+void CVisionPlatDoc::AssertValid() const
 {
 	CDocument::AssertValid();
 }
 
-void CView_in_DialogDoc::Dump(CDumpContext& dc) const
+void CVisionPlatDoc::Dump(CDumpContext& dc) const
 {
 	CDocument::Dump(dc);
 }
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogDoc Befehle
+// CVisionPlatDoc Befehle

@@ -2,12 +2,12 @@
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
 #include "MainFrm.h"
 #include "ChildFrm.h"
-#include "View_in_DialogDoc.h"
-#include "View_in_DialogView.h"
+#include "VisionPlatDoc.h"
+#include "VisionPlatView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -16,10 +16,10 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogApp
+// CVisionPlat
 
-BEGIN_MESSAGE_MAP(CView_in_DialogApp, CWinApp)
-	//{{AFX_MSG_MAP(CView_in_DialogApp)
+BEGIN_MESSAGE_MAP(CVisionPlat, CWinApp)
+	//{{AFX_MSG_MAP(CVisionPlat)
 	ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
 		// HINWEIS - Hier werden Mapping-Makros vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!
@@ -32,23 +32,23 @@ BEGIN_MESSAGE_MAP(CView_in_DialogApp, CWinApp)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogApp Konstruktion
+// CVisionPlat Konstruktion
 
-CView_in_DialogApp::CView_in_DialogApp()
+CVisionPlat::CVisionPlat()
 {
 	// ZU ERLEDIGEN: Hier Code zur Konstruktion einfügen
 	// Alle wichtigen Initialisierungen in InitInstance platzieren
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Das einzige CView_in_DialogApp-Objekt
+// Das einzige CVisionPlat-Objekt
 
-CView_in_DialogApp theApp;
+CVisionPlat theApp;
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogApp Initialisierung
+// CVisionPlat Initialisierung
 
-BOOL CView_in_DialogApp::InitInstance()
+BOOL CVisionPlat::InitInstance()
 {
 	AfxEnableControlContainer();
 
@@ -76,9 +76,9 @@ BOOL CView_in_DialogApp::InitInstance()
 	CMultiDocTemplate* pDocTemplate;
 	pDocTemplate = new CMultiDocTemplate(
 		IDR_VIEW_ITYPE,
-		RUNTIME_CLASS(CView_in_DialogDoc),
+		RUNTIME_CLASS(CVisionPlatDoc),
 		RUNTIME_CLASS(CChildFrame), // Benutzerspezifischer MDI-Child-Rahmen
-		RUNTIME_CLASS(CView_in_DialogView));
+		RUNTIME_CLASS(CVisionPlatView));
 	AddDocTemplate(pDocTemplate);
 
 	// Haupt-MDI-Rahmenfenster erzeugen
@@ -150,11 +150,11 @@ BEGIN_MESSAGE_MAP(CAboutDlg, CDialog)
 END_MESSAGE_MAP()
 
 // Anwendungsbefehl zum Ausführen des Dialogfelds
-void CView_in_DialogApp::OnAppAbout()
+void CVisionPlat::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogApp-Nachrichtenbehandlungsroutinen
+// CVisionPlat-Nachrichtenbehandlungsroutinen

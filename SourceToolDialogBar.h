@@ -5,24 +5,24 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
 // MyDialogBar.h : Header-Datei
 //
 
 /////////////////////////////////////////////////////////////////////////////
-// Dialogfeld CMyDialogBar 
+// Dialogfeld CSourceToolDialogBar 
 
-class CMyDialogBar : public CDialogBar
+class CSourceToolDialogBar : public CDialogBar
 {
-	DECLARE_DYNCREATE(CMyDialogBar)
+	DECLARE_DYNCREATE(CSourceToolDialogBar)
 		
 // Konstruktion
 public:
-	CMyDialogBar(CWnd* pParent = NULL);   // Standardkonstruktor
+	CSourceToolDialogBar(CWnd* pParent = NULL);   // Standardkonstruktor
 
 // Dialogfelddaten
-	//{{AFX_DATA(CMyDialogBar)
+	//{{AFX_DATA(CSourceToolDialogBar)
 	enum { IDD = IDD_DIALOGBAR };
 	//CSpinButtonCtrl	m_Spin1;
 	int		m_input;
@@ -34,7 +34,7 @@ private:
 
 // Überschreibungen
 	// Vom Klassen-Assistenten generierte virtuelle Funktionsüberschreibungen
-	//{{AFX_VIRTUAL(CMyDialogBar)
+	//{{AFX_VIRTUAL(CSourceToolDialogBar)
 	public:
 	virtual BOOL Create(CWnd* pParentWnd, UINT nIDTemplate, UINT nStyle, UINT nID);
 	protected:
@@ -45,7 +45,7 @@ private:
 protected:
 
 	// Generierte Nachrichtenzuordnungsfunktionen
-	//{{AFX_MSG(CMyDialogBar)
+	//{{AFX_MSG(CSourceToolDialogBar)
 	afx_msg void OnExit();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()

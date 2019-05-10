@@ -2,8 +2,8 @@
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
-#include "MyDialogBar.h"
+#include "VisionPlat.h"
+#include "SourceToolDialogBar.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -12,40 +12,40 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// Dialogfeld CMyDialogBar 
+// Dialogfeld CSourceToolDialogBar 
 
-IMPLEMENT_DYNCREATE(CMyDialogBar, CDialogBar)
+IMPLEMENT_DYNCREATE(CSourceToolDialogBar, CDialogBar)
 
-CMyDialogBar::CMyDialogBar(CWnd* pParent /*=NULL*/)
-	: CDialogBar(/*CMyDialogBar::IDD, pParent*/)
+CSourceToolDialogBar::CSourceToolDialogBar(CWnd* pParent /*=NULL*/)
+	: CDialogBar(/*CSourceToolDialogBar::IDD, pParent*/)
 {
-	//{{AFX_DATA_INIT(CMyDialogBar)
+	//{{AFX_DATA_INIT(CSourceToolDialogBar)
 	m_input = 0;
 	//}}AFX_DATA_INIT
 }
 
 
-void CMyDialogBar::DoDataExchange(CDataExchange* pDX)
+void CSourceToolDialogBar::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogBar::DoDataExchange(pDX);
-	//{{AFX_DATA_MAP(CMyDialogBar)
+	//{{AFX_DATA_MAP(CSourceToolDialogBar)
 	//DDX_Control(pDX, IDC_SPIN1, m_Spin1);
 	DDX_Text(pDX, IDC_INPUT, m_input);
 	//}}AFX_DATA_MAP
 }
 
 
-BEGIN_MESSAGE_MAP(CMyDialogBar, CDialogBar)
-	//{{AFX_MSG_MAP(CMyDialogBar)
+BEGIN_MESSAGE_MAP(CSourceToolDialogBar, CDialogBar)
+	//{{AFX_MSG_MAP(CSourceToolDialogBar)
 	ON_BN_CLICKED(IDC_EXIT, OnExit)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// Behandlungsroutinen für Nachrichten CMyDialogBar 
+// Behandlungsroutinen für Nachrichten CSourceToolDialogBar 
 
 
-BOOL CMyDialogBar::Create(CWnd* pParentWnd, UINT nIDTemplate, UINT nStyle, UINT nID) 
+BOOL CSourceToolDialogBar::Create(CWnd* pParentWnd, UINT nIDTemplate, UINT nStyle, UINT nID) 
 {
 	// TODO: Speziellen Code hier einfügen und/oder Basisklasse aufrufen
 	m_pParentWnd = pParentWnd;
@@ -54,7 +54,7 @@ BOOL CMyDialogBar::Create(CWnd* pParentWnd, UINT nIDTemplate, UINT nStyle, UINT 
 }
 
 
-void CMyDialogBar::OnExit() 
+void CSourceToolDialogBar::OnExit() 
 {
 	// TODO: Code für die Behandlungsroutine der Steuerelement-Benachrichtigung hier einfügen
 	m_pParentWnd->DestroyWindow();

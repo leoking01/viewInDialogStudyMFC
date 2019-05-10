@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
 #include "MainFrm.h"
 
@@ -110,7 +110,7 @@ void CMainFrame::Dump(CDumpContext& dc) const
 void CMainFrame::OnCrtdlg() 
 {
 	// TODO: Code für Befehlsbehandlungsroutine hier einfügen
-	m_pDlgWnd = new CDialogWindow; //do not call delete, as the object is destroyed by the Funcion DestroyWindow()
+	m_pDlgWnd = new CSourceToolFrameWnd; //do not call delete, as the object is destroyed by the Funcion DestroyWindow()
 								//It's really this simple, believe it! Perhaps you know the situation with 
 								//modeless Dialogs, where you have to send a WindowsMessage to the parent window 
 								//and have the latter destroy the Dialog window and free the memory by delete. 
@@ -132,7 +132,7 @@ void CMainFrame::OnCrtdlg()
 void CMainFrame::OnUpdateCrtdlg(CCmdUI* pCmdUI) //grays the menu item, as only one DialogWindow is allowed
 {
 	// TODO: Code für die Befehlsbehandlungsroutine zum Aktualisieren der Benutzeroberfläche hier einfügen
-	if(CDialogWindow::IsCreated())
+	if(CSourceToolFrameWnd::IsCreated())
 		pCmdUI->Enable(FALSE);
 	else
 		pCmdUI->Enable(TRUE);

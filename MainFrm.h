@@ -9,7 +9,7 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#include "DialogWindow.h"
+#include "SourceToolFrameWnd.h"
 
 class CMainFrame : public CMDIFrameWnd
 {
@@ -40,7 +40,7 @@ public:
 protected:  // Eingebundene Elemente der Steuerleiste
 	CStatusBar  m_wndStatusBar;
 	CToolBar    m_wndToolBar;
-	CDialogWindow* m_pDlgWnd; //pointer to DialogWindow. Objects are created dynamically and destroyed calling DestroyWindow()
+	CSourceToolFrameWnd* m_pDlgWnd; //pointer to DialogWindow. Objects are created dynamically and destroyed calling DestroyWindow()
 
 // Generierte Message-Map-Funktionen
 protected:

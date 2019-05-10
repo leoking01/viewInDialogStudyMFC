@@ -1,11 +1,11 @@
-// View_in_DialogView.cpp : Implementierung der Klasse CView_in_DialogView
+// View_in_DialogView.cpp : Implementierung der Klasse CVisionPlatView
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
-#include "View_in_DialogDoc.h"
-#include "View_in_DialogView.h"
+#include "VisionPlatDoc.h"
+#include "VisionPlatView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -14,12 +14,12 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView
+// CVisionPlatView
 
-IMPLEMENT_DYNCREATE(CView_in_DialogView, CScrollView)
+IMPLEMENT_DYNCREATE(CVisionPlatView, CScrollView)
 
-BEGIN_MESSAGE_MAP(CView_in_DialogView, CScrollView)
-	//{{AFX_MSG_MAP(CView_in_DialogView)
+BEGIN_MESSAGE_MAP(CVisionPlatView, CScrollView)
+	//{{AFX_MSG_MAP(CVisionPlatView)
 		// HINWEIS - Hier werden Mapping-Makros vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!
 	//}}AFX_MSG_MAP
@@ -30,19 +30,19 @@ BEGIN_MESSAGE_MAP(CView_in_DialogView, CScrollView)
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView Konstruktion/Destruktion
+// CVisionPlatView Konstruktion/Destruktion
 
-CView_in_DialogView::CView_in_DialogView()
+CVisionPlatView::CVisionPlatView()
 {
 	// ZU ERLEDIGEN: Hier Code zur Konstruktion einfügen,
 
 }
 
-CView_in_DialogView::~CView_in_DialogView()
+CVisionPlatView::~CVisionPlatView()
 {
 }
 
-BOOL CView_in_DialogView::PreCreateWindow(CREATESTRUCT& cs)
+BOOL CVisionPlatView::PreCreateWindow(CREATESTRUCT& cs)
 {
 	// ZU ERLEDIGEN: Ändern Sie hier die Fensterklasse oder das Erscheinungsbild, indem Sie
 	//  CREATESTRUCT cs modifizieren.
@@ -51,16 +51,16 @@ BOOL CView_in_DialogView::PreCreateWindow(CREATESTRUCT& cs)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView Zeichnen
+// CVisionPlatView Zeichnen
 
-void CView_in_DialogView::OnDraw(CDC* pDC)
+void CVisionPlatView::OnDraw(CDC* pDC)
 {
-	CView_in_DialogDoc* pDoc = GetDocument();
+	CVisionPlatDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
 	// ZU ERLEDIGEN: Hier Code zum Zeichnen der ursprünglichen Daten hinzufügen
 }
 
-void CView_in_DialogView::OnInitialUpdate()
+void CVisionPlatView::OnInitialUpdate()
 {
 	CScrollView::OnInitialUpdate();
 
@@ -71,44 +71,44 @@ void CView_in_DialogView::OnInitialUpdate()
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView Drucken
+// CVisionPlatView Drucken
 
-BOOL CView_in_DialogView::OnPreparePrinting(CPrintInfo* pInfo)
+BOOL CVisionPlatView::OnPreparePrinting(CPrintInfo* pInfo)
 {
 	// Standardvorbereitung
 	return DoPreparePrinting(pInfo);
 }
 
-void CView_in_DialogView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+void CVisionPlatView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
 	// ZU ERLEDIGEN: Zusätzliche Initialisierung vor dem Drucken hier einfügen
 }
 
-void CView_in_DialogView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
+void CVisionPlatView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
 	// ZU ERLEDIGEN: Hier Bereinigungsarbeiten nach dem Drucken einfügen
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView Diagnose
+// CVisionPlatView Diagnose
 
 #ifdef _DEBUG
-void CView_in_DialogView::AssertValid() const
+void CVisionPlatView::AssertValid() const
 {
 	CScrollView::AssertValid();
 }
 
-void CView_in_DialogView::Dump(CDumpContext& dc) const
+void CVisionPlatView::Dump(CDumpContext& dc) const
 {
 	CScrollView::Dump(dc);
 }
 
-CView_in_DialogDoc* CView_in_DialogView::GetDocument() // Die endgültige (nicht zur Fehlersuche kompilierte) Version ist Inline
+CVisionPlatDoc* CVisionPlatView::GetDocument() // Die endgültige (nicht zur Fehlersuche kompilierte) Version ist Inline
 {
-	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CView_in_DialogDoc)));
-	return (CView_in_DialogDoc*)m_pDocument;
+	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CVisionPlatDoc)));
+	return (CVisionPlatDoc*)m_pDocument;
 }
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogView Nachrichten-Handler
+// CVisionPlatView Nachrichten-Handler

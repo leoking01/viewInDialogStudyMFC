@@ -1,4 +1,4 @@
-// View_in_DialogDoc.h : Schnittstelle der Klasse CView_in_DialogDoc
+// View_in_DialogDoc.h : Schnittstelle der Klasse CVisionPlatDoc
 //
 /////////////////////////////////////////////////////////////////////////////
 
@@ -10,11 +10,11 @@
 #endif // _MSC_VER > 1000
 
 
-class CView_in_DialogDoc : public CDocument
+class CVisionPlatDoc : public CDocument
 {
 protected: // Nur aus Serialisierung erzeugen
-	CView_in_DialogDoc();
-	DECLARE_DYNCREATE(CView_in_DialogDoc)
+	CVisionPlatDoc();
+	DECLARE_DYNCREATE(CVisionPlatDoc)
 
 // Attribute
 public:
@@ -24,7 +24,7 @@ public:
 
 // Überladungen
 	// Vom Klassenassistenten generierte Überladungen virtueller Funktionen
-	//{{AFX_VIRTUAL(CView_in_DialogDoc)
+	//{{AFX_VIRTUAL(CVisionPlatDoc)
 	public:
 	virtual BOOL OnNewDocument();
 	virtual void Serialize(CArchive& ar);
@@ -32,7 +32,7 @@ public:
 
 // Implementierung
 public:
-	virtual ~CView_in_DialogDoc();
+	virtual ~CVisionPlatDoc();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
@@ -42,7 +42,7 @@ protected:
 
 // Generierte Message-Map-Funktionen
 protected:
-	//{{AFX_MSG(CView_in_DialogDoc)
+	//{{AFX_MSG(CVisionPlatDoc)
 		// HINWEIS - An dieser Stelle werden Member-Funktionen vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!
 	//}}AFX_MSG

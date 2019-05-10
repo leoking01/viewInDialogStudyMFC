@@ -6,19 +6,19 @@
 #endif // _MSC_VER > 1000
 // DialogWindow.h : Header-Datei
 /////////////////////////////////////////////////////////////////////////////
-// Rahmen CDialogWindow 
+// Rahmen CSourceToolFrameWnd 
 
-#include "DialogWindow.h"
-#include "ExtraView.h"
-#include "MyDialogBar.h"
+#include "SourceToolFrameWnd.h"
+#include "SourceToolView.h"
+#include "SourceToolDialogBar.h"
 
-class CDialogWindow : public CFrameWnd
+class CSourceToolFrameWnd : public CFrameWnd
 {
-	DECLARE_DYNCREATE(CDialogWindow)
+	DECLARE_DYNCREATE(CSourceToolFrameWnd)
 protected:
 	
 public:
-	CDialogWindow();	//declared public by myself as is the Destructor           
+	CSourceToolFrameWnd();	//declared public by myself as is the Destructor           
 
 	// Attribute
 public:
@@ -49,10 +49,10 @@ public:
 	// Implementierung
 protected:
 public:
-	virtual ~CDialogWindow();
+	virtual ~CSourceToolFrameWnd();
 	
 	// Generierte Nachrichtenzuordnungsfunktionen
-	//{{AFX_MSG(CDialogWindow)
+	//{{AFX_MSG(CSourceToolFrameWnd)
 	afx_msg void OnGet();
 	afx_msg void OnExit();
 	//}}AFX_MSG

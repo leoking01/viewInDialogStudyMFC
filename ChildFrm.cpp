@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "View_in_Dialog.h"
+#include "VisionPlat.h"
 
 #include "ChildFrm.h"
 

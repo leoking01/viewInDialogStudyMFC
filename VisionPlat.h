@@ -15,24 +15,24 @@
 #include "resource.h"       // Hauptsymbole
 
 /////////////////////////////////////////////////////////////////////////////
-// CView_in_DialogApp:
+// CVisionPlat:
 // Siehe View_in_Dialog.cpp für die Implementierung dieser Klasse
 //
 
-class CView_in_DialogApp : public CWinApp
+class CVisionPlat : public CWinApp
 {
 public:
-	CView_in_DialogApp();
+	CVisionPlat();
 
 // Überladungen
 	// Vom Klassenassistenten generierte Überladungen virtueller Funktionen
-	//{{AFX_VIRTUAL(CView_in_DialogApp)
+	//{{AFX_VIRTUAL(CVisionPlat)
 	public:
 	virtual BOOL InitInstance();
 	//}}AFX_VIRTUAL
 
 // Implementierung
-	//{{AFX_MSG(CView_in_DialogApp)
+	//{{AFX_MSG(CVisionPlat)
 	afx_msg void OnAppAbout();
 		// HINWEIS - An dieser Stelle werden Member-Funktionen vom Klassen-Assistenten eingefügt und entfernt.
 		//    Innerhalb dieser generierten Quelltextabschnitte NICHTS VERÄNDERN!

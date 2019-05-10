@@ -12,17 +12,17 @@
 
 
 
-class CExtraView : public CScrollView
+class CSourceToolView : public CScrollView
 {
 protected:
 
 public:
-	CExtraView();           // declared public by myself as is the Destructor
-	DECLARE_DYNCREATE(CExtraView)
+	CSourceToolView();           // declared public by myself as is the Destructor
+	DECLARE_DYNCREATE(CSourceToolView)
 		
 // Attribute
 public:
-	friend class CDialogWindow; 
+	friend class CSourceToolFrameWnd; 
 	
 public:
 	CString m_strOutput, m_strOutputtxt; //just to show how it works
@@ -33,7 +33,7 @@ public:
 
 // Überschreibungen
 	// Vom Klassen-Assistenten generierte virtuelle Funktionsüberschreibungen
-	//{{AFX_VIRTUAL(CExtraView)
+	//{{AFX_VIRTUAL(CSourceToolView)
 	public:
 	virtual BOOL Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext = NULL);
 	protected:
@@ -45,14 +45,14 @@ public:
 protected:
 
 public:
-	virtual ~CExtraView();
+	virtual ~CSourceToolView();
 #ifdef _DEBUG
 	virtual void AssertValid() const;
 	virtual void Dump(CDumpContext& dc) const;
 #endif
 
 	// Generierte Nachrichtenzuordnungsfunktionen
-	//{{AFX_MSG(CExtraView)
+	//{{AFX_MSG(CSourceToolView)
 		// HINWEIS - Der Klassen-Assistent fügt hier Member-Funktionen ein und entfernt diese.
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()

@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "ExtraView.h"
+#include "SourceToolView.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -11,29 +11,29 @@ static char THIS_FILE[] = __FILE__;
 #endif
 
 /////////////////////////////////////////////////////////////////////////////
-// CExtraView
+// CSourceToolView
 
-IMPLEMENT_DYNCREATE(CExtraView, CScrollView)
+IMPLEMENT_DYNCREATE(CSourceToolView, CScrollView)
 
-CExtraView::CExtraView()
+CSourceToolView::CSourceToolView()
 {
 }
 
-CExtraView::~CExtraView()
+CSourceToolView::~CSourceToolView()
 {
 }
 
 
-BEGIN_MESSAGE_MAP(CExtraView, CScrollView)
-	//{{AFX_MSG_MAP(CExtraView)
+BEGIN_MESSAGE_MAP(CSourceToolView, CScrollView)
+	//{{AFX_MSG_MAP(CSourceToolView)
 		// HINWEIS - Der Klassen-Assistent fügt hier Zuordnungsmakros ein und entfernt diese.
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 /////////////////////////////////////////////////////////////////////////////
-// Zeichnung CExtraView 
+// Zeichnung CSourceToolView 
 
-void CExtraView::OnInitialUpdate()
+void CSourceToolView::OnInitialUpdate()
 {
 	CScrollView::OnInitialUpdate();
 
@@ -54,7 +54,7 @@ void CExtraView::OnInitialUpdate()
 	m_strOutputtxt = "Hello! ";
 }
 
-void CExtraView::OnDraw(CDC* pDC)
+void CSourceToolView::OnDraw(CDC* pDC)
 {
 	//CDocument* pDoc = GetDocument(); // In my project I needed a Document-independent Viewclass. Exchange it by your ViewClass.
 	// ZU ERLEDIGEN: Code zum Zeichnen hier einfügen
@@ -75,24 +75,24 @@ void CExtraView::OnDraw(CDC* pDC)
 }
 
 /////////////////////////////////////////////////////////////////////////////
-// Diagnose CExtraView
+// Diagnose CSourceToolView
 
 #ifdef _DEBUG
-void CExtraView::AssertValid() const
+void CSourceToolView::AssertValid() const
 {
 	CScrollView::AssertValid();
 }
 
-void CExtraView::Dump(CDumpContext& dc) const
+void CSourceToolView::Dump(CDumpContext& dc) const
 {
 	CScrollView::Dump(dc);
 }
 #endif //_DEBUG
 
 /////////////////////////////////////////////////////////////////////////////
-// Behandlungsroutinen für Nachrichten CExtraView 
+// Behandlungsroutinen für Nachrichten CSourceToolView 
 
-BOOL CExtraView::Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext) 
+BOOL CSourceToolView::Create(LPCTSTR lpszClassName, LPCTSTR lpszWindowName, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID, CCreateContext* pContext) 
 {
 	// TODO: Speziellen Code hier einfügen und/oder Basisklasse aufrufen
 	
