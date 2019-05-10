@@ -39,6 +39,9 @@
     <ClCompile Include="View_in_DialogView.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
+    <ClCompile Include="MyDialogBar.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="View_in_Dialog.rc">
@@ -71,6 +74,9 @@
       <Filter>Header-Dateien</Filter>
     </ClInclude>
     <ClInclude Include="View_in_DialogView.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MyDialogBar.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
   </ItemGroup>

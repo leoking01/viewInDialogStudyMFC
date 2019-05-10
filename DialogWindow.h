@@ -5,8 +5,6 @@
 #pragma once
 #endif // _MSC_VER > 1000
 // DialogWindow.h : Header-Datei
-//
-
 /////////////////////////////////////////////////////////////////////////////
 // Rahmen CDialogWindow 
 
@@ -31,10 +29,8 @@ private:
 	CView* m_pView;
 	CRuntimeClass* m_pViewClass;
 	
-	
 	// Operationen
 public:
-
 	// Überschreibungen
 	// Vom Klassen-Assistenten generierte virtuelle Funktionsüberschreibungen
 	//{{AFX_VIRTUAL(CExtraWindow)
@@ -45,16 +41,13 @@ protected:
 	//}}AFX_VIRTUAL
 
 private:
-
 	
 public:
-
 	BOOL DoModeless(); //starts a modeless DialogWindow
 	static BOOL IsCreated() {return m_bCreatedFlag;} //to control the menu item
 
 	// Implementierung
 protected:
-	
 public:
 	virtual ~CDialogWindow();
 	

@@ -52,8 +52,6 @@ void CExtraView::OnInitialUpdate()
 	
 	//initialize m_strOutputtxt
 	m_strOutputtxt = "Hello! ";
-		
-	
 }
 
 void CExtraView::OnDraw(CDC* pDC)
@@ -61,23 +59,19 @@ void CExtraView::OnDraw(CDC* pDC)
 	//CDocument* pDoc = GetDocument(); // In my project I needed a Document-independent Viewclass. Exchange it by your ViewClass.
 	// ZU ERLEDIGEN: Code zum Zeichnen hier einfügen
 	//create the output, just to have any page-filling output:
-
 	int lines, cols;
-	m_strOutput="";
-	for(cols=0; cols < 100; cols++)
-		{
-			m_strOutput += m_strOutputtxt ;
-		}
-	
-	for(lines=0; lines <50; lines++)
+	m_strOutput = "";
+	const  int  w = 4;  // 100  
+	const int  h = 3;  //  50  
+	for(cols=0; cols < w; cols++)
 	{
-		
-		pDC->TextOut(0,lines*50,m_strOutput);
-
+		m_strOutput += m_strOutputtxt ;
 	}
 
-	
-
+	for(lines=0; lines <h; lines++)
+	{
+		pDC->TextOut(0,lines*50,m_strOutput);
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////

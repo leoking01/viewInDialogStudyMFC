@@ -14,7 +14,6 @@ static char THIS_FILE[] = __FILE__;
 
 #include "View_in_Dialog.h"
 
-
 /////////////////////////////////////////////////////////////////////////////
 // CDialogWindow
 
@@ -24,16 +23,11 @@ BOOL CDialogWindow::m_bCreatedFlag = FALSE;
 
 CDialogWindow::CDialogWindow()
 {
-	
-
-
 }
 
 CDialogWindow::~CDialogWindow()
 {
 }
-
-
 
 BEGIN_MESSAGE_MAP(CDialogWindow, CFrameWnd)
 	//{{AFX_MSG_MAP(CDialogWindow)
@@ -49,8 +43,6 @@ END_MESSAGE_MAP()
 BOOL CDialogWindow::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext) 
 {
 	// TODO: Speziellen Code hier einfügen und/oder Basisklasse aufrufen
-	
-
 	//hang in the view CExtraView, this code ist copied (but modified) from http://www.codeguru.com/doc_view/ReplacingView.shtml
 	m_pViewClass = RUNTIME_CLASS(CExtraView);
 	m_pView = (CView*)m_pViewClass->CreateObject();
@@ -81,22 +73,15 @@ BOOL CDialogWindow::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext
 	{
 		SetActiveView(m_pView);
 	}
-	//
-
 	//end of hang in view
-
-
-	//Create the DialogBar
-	if (!m_wndDialogBar.Create(this,IDD_DIALOGBAR,  CBRS_RIGHT
-		,IDD_DIALOGBAR))
+	//Create the DialogBar-----  ÔÚÓÒ²à´´½¨
+	//if (  !m_wndDialogBar.Create(  this,IDD_DIALOGBAR,  CBRS_RIGHT ,IDD_DIALOGBAR  )  )
+	if (  !m_wndDialogBar.Create(  this,IDD_DIALOGBAR,  CBRS_LEFT ,IDD_DIALOGBAR  )  )
 	{
-		TRACE("Warning: Couldn't create DialogBar!\n");
+		TRACE("Warning: Couldn't create DialogBar!\n"  );
 		return FALSE;
 	}
 	//end DialogBar
-
-
-	
 	return CFrameWnd::OnCreateClient(lpcs, pContext);
 }
 
@@ -111,7 +96,6 @@ BOOL CDialogWindow::DoModeless() //one could also add a function DoModal analogo
 	}
 
 	m_bCreatedFlag=TRUE; //set the flag now
-
 			
 	//calcualate the coords for the window
 	CSize size;
@@ -119,7 +103,7 @@ BOOL CDialogWindow::DoModeless() //one could also add a function DoModal analogo
 	size.cx = ::GetSystemMetrics(SM_CXSCREEN);
 	size.cy = ::GetSystemMetrics(SM_CYSCREEN);
 	rect.top = size.cy > 600 ? size.cy/2 - 300 : 0; //Total size  900 * 600 Pixels or, if screen is smaller, Screensize
-	rect.bottom = size.cy > 600 ? size.cy/2 + 300 : size.cy;//center window on screen
+	rect.bottom = size.cy > 600 ? size.cy/2 + 300 : size.cy;  //center window on screen
 	rect.left = size.cx > 900? size.cx/2 - 450 : 0;
 	rect.right = size.cx > 900? size.cx/2 + 450 : size.cx;
 	
@@ -129,7 +113,6 @@ BOOL CDialogWindow::DoModeless() //one could also add a function DoModal analogo
 
 	return CWnd::CreateEx(NULL,NULL, Titel, Windowstyle, rect, /*this if desired to be child 
 		window, else ...*/ NULL, NULL, NULL);
-	
 }
 
 

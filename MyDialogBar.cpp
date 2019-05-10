@@ -29,7 +29,7 @@ void CMyDialogBar::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogBar::DoDataExchange(pDX);
 	//{{AFX_DATA_MAP(CMyDialogBar)
-	DDX_Control(pDX, IDC_SPIN1, m_Spin1);
+	//DDX_Control(pDX, IDC_SPIN1, m_Spin1);
 	DDX_Text(pDX, IDC_INPUT, m_input);
 	//}}AFX_DATA_MAP
 }

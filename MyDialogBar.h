@@ -24,7 +24,7 @@ public:
 // Dialogfelddaten
 	//{{AFX_DATA(CMyDialogBar)
 	enum { IDD = IDD_DIALOGBAR };
-	CSpinButtonCtrl	m_Spin1;
+	//CSpinButtonCtrl	m_Spin1;
 	int		m_input;
 	//}}AFX_DATA
 

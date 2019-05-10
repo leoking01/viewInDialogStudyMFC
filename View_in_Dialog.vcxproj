@@ -133,6 +133,7 @@
     <ClCompile Include="DialogWindow.cpp" />
     <ClCompile Include="ExtraView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MyDialogBar.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
@@ -151,6 +152,7 @@
     <ClInclude Include="DialogWindow.h" />
     <ClInclude Include="ExtraView.h" />
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MyDialogBar.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="View_in_Dialog.h" />
